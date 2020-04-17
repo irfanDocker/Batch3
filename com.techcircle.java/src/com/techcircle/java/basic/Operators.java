@@ -139,7 +139,74 @@ public class Operators {
 		
 		
 		
-		//
+		// Assignment operator += , -= , *= , /=
+	
+		int a  = 10;
+		int b  = 20;
+		
+		
+		a += 5; // a = a +5;
+		
+		
+		System.out.println(a);
+		
+		
+		b -= 9 ; // b = b- 9
+		
+		System.out.println(b);
+		
+		
+		a *= b;// a = a*b;
+		
+		System.out.println(a);
+		
+		
+		a /= 5;  // a = a / 5;
+		
+		System.out.println(a);
+		
+		
+		
+		
+		
+		
+		
+		//Ternary Operator
+		
+		// Variable x = (expression) ? if true : if false;
+		
+		int x = 10 ;
+		
+		int y ;
+		
+		y = (x == 10 ) ? 40 : 0;
+		
+		System.out.println(y);
+		
+		
+		
+		
+		y = (x < 4) ? 90 : 100;
+		
+		System.out.println("Value of the y is : "+y);
+		
+		
+		
+		///
+		
+		final int z = 10;
+		
+		//z = 20;
+		
+		System.out.println("Value of the z : "+z);
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
