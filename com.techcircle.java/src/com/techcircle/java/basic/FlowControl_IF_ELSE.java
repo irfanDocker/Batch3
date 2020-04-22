@@ -1,5 +1,7 @@
 package com.techcircle.java.basic;
 
+import java.util.Scanner;
+
 public class FlowControl_IF_ELSE {
 
 	public static void main(String[] args) {
@@ -35,21 +37,31 @@ public class FlowControl_IF_ELSE {
 		 */
 
 		// Ctrl + Shift +F
-		int temperature = 85;
+		Scanner obj = new Scanner(System.in);
 
-		boolean sunny = true;
+//		int temperature = 85;
+		System.out.println("What is the temperature?");
+		int temperature = obj.nextInt();
+
+		System.out.println("Is sunny today?");
+//		boolean sunny = true;
+		boolean sunny = obj.nextBoolean();
 
 		if (temperature > 90) { // int temperature
-			if (sunny) // boolean sunny
+			if (sunny) { // boolean sunny
 				System.out.println("Beach");
-			else
+			} else {
 				System.out.println("Movie");
+			}
 		} else {
-			if (sunny)
+			if (sunny) {
 				System.out.println("Tennis");
-			else
+			} else {
 				System.out.println("Soccer");
+			}
 		}
+
+		obj.close();
 	}
 
 }
