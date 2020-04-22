@@ -37,31 +37,92 @@ public class FlowControl_IF_ELSE {
 		 */
 
 		// Ctrl + Shift +F
-		Scanner obj = new Scanner(System.in);
+//		Scanner obj = new Scanner(System.in);
+//
+////		int temperature = 85;
+//		System.out.println("What is the temperature?");
+//		int temperature = obj.nextInt();
+//
+//		System.out.println("Is sunny today?");
+////		boolean sunny = true;
+//		boolean sunny = obj.nextBoolean();
+//
+//		if (temperature > 90) { // int temperature
+//			if (sunny) { // boolean sunny
+//				System.out.println("Beach");
+//			} else {
+//				System.out.println("Movie");
+//			}
+//		} else {
+//			if (sunny) {
+//				System.out.println("Tennis");
+//			} else {
+//				System.out.println("Soccer");
+//			}
+//		}
+//
+//		obj.close();
+//
+//		int score;
+//		char grade = 'F';
+//
+//		System.out.println("Enter your score: ");
+//
+//		Scanner scanner = new Scanner(System.in);
+//
+//		score = scanner.nextInt();
+//
+//		if ((score >= 90) && (score <= 100)) {
+//			grade = 'A';
+//		} else if (score >= 80 && score < 90) {
+//			grade = 'B';
+//		} else if (score >= 70 && score < 80) {
+//			grade = 'C';
+//		} else if (score >= 60 && score < 70) {
+//			grade = 'D';
+//		} else if (score >= 0 && score < 60) {
+//			grade = 'F';
+//
+//		} else {
+//			System.out.println("invalid score");
+//		}
+//		System.out.println("Score = " + score);
+//		System.out.println("Grade = " + grade);
+//
+//		scanner.close();
 
-//		int temperature = 85;
-		System.out.println("What is the temperature?");
-		int temperature = obj.nextInt();
+		
+		//Queensy
+//		Scanner greeting = new Scanner(System.in);
+//
+//		System.out.println("What hour is it?");
+//		int time = greeting.nextInt();
+//
+//		if ((time >= 5) && (time < 12)) {
+//			System.out.println("Good morning");
+//		} else if ((time >= 12) && (time < 17)) {
+//			System.out.println("Good afternoon");
+//		} else if ((time >= 17) && (time < 24)) {
+//			System.out.println("Good evening");
+//		}
+//
+//		greeting.close();
 
-		System.out.println("Is sunny today?");
-//		boolean sunny = true;
-		boolean sunny = obj.nextBoolean();
+		
+		//Zaineb
+		Scanner day = new Scanner(System.in);
+		System.out.println("Please type first age");
+		int time = day.nextInt();
 
-		if (temperature > 90) { // int temperature
-			if (sunny) { // boolean sunny
-				System.out.println("Beach");
-			} else {
-				System.out.println("Movie");
-			}
-		} else {
-			if (sunny) {
-				System.out.println("Tennis");
-			} else {
-				System.out.println("Soccer");
-			}
+		if ((time < 5) && (time == 12)) {
+			System.out.println("good Moorning");
+		} else if ((time > 12) && (time == 17)) {
+			System.out.println("good afternoon");
+		} else if ((time > 17) && (time == 24)) {
+			System.out.println("good evening");
+			day.close();
 		}
 
-		obj.close();
 	}
 
 }
