@@ -8,24 +8,24 @@ public class BankBalance {
 		double overdrawnPenalty = 8.0;
 		double interstRate = 0.02;
 		double balance;
-		
+
 		System.out.println("Enter your checking account balance : $");
-		
+
 		Scanner scanner = new Scanner(System.in);
-		
+
 		balance = scanner.nextDouble();
-		
-		System.out.println("Your original balance is $"+balance);
-		
-		if(balance >=0)
-			balance = balance + (interstRate * balance)/12;
-		else
+
+		System.out.println("Your original balance is $" + balance);
+		// Boolean expression
+		if (balance >= 0) {
+			balance = balance + (interstRate * balance) / 12;
+			System.out.println("Hello");
+		} else {
 			balance = balance - overdrawnPenalty;
-		
-		System.out.println("Your new balance is $"+balance);
-		
+		}
+		System.out.println("Your new balance is $" + balance);
+
 		scanner.close();
-		
 
 	}
 

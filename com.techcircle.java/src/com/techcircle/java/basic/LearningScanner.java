@@ -11,8 +11,15 @@ public class LearningScanner {
 		
 		int value = zaineb.nextInt();
 		
-		System.out.println("Your value is : "+value);
+		int valueB = 5555;
 		
+		int result = value + valueB;
+		
+		double balance = zaineb.nextDouble();
+		
+		System.out.println("Your Result is : "+result);
+		
+		System.out.println("Your balance is : "+ balance);
 		
 		zaineb.close();
 		
