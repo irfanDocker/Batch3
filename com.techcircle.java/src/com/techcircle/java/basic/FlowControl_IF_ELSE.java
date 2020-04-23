@@ -91,8 +91,7 @@ public class FlowControl_IF_ELSE {
 //
 //		scanner.close();
 
-		
-		//Queensy
+		// Queensy
 //		Scanner greeting = new Scanner(System.in);
 //
 //		System.out.println("What hour is it?");
@@ -108,20 +107,131 @@ public class FlowControl_IF_ELSE {
 //
 //		greeting.close();
 
-		
-		//Zaineb
-		Scanner day = new Scanner(System.in);
-		System.out.println("Please type first age");
-		int time = day.nextInt();
+		// Zaineb
+//		Scanner day = new Scanner(System.in);
+//		System.out.println("Please type first age");
+//		int time = day.nextInt();
+//
+//		if ((time < 5) && (time == 12)) {
+//			System.out.println("good Moorning");
+//		} else if ((time > 12) && (time == 17)) {
+//			System.out.println("good afternoon");
+//		} else if ((time > 17) && (time == 24)) {
+//			System.out.println("good evening");
+//			day.close();
+//		}
 
-		if ((time < 5) && (time == 12)) {
-			System.out.println("good Moorning");
-		} else if ((time > 12) && (time == 17)) {
-			System.out.println("good afternoon");
-		} else if ((time > 17) && (time == 24)) {
-			System.out.println("good evening");
-			day.close();
+		/*
+		 * Task 2: Nested if statement
+		 * 
+		 * Write a Java Program using nested if statement. Find the largest value
+		 * between the 3 numbers below. n1 = -1.0 n2 = 4.5 n3 = -5.3
+		 */
+
+		// Zaineb
+		double n1 = 4.5;
+		double n2 = 4.5;
+		double n3 = -5.3;
+		if ((n1 > n2) && (n1 > n3) && (n1 !=n2)) {
+			
+		} else if ((n2 > n1) && (n2 > n3)) {
+			System.out.println("N2 is larger value");
+		} else if ((n3 > n1) && (n3 > n2)) {
+			System.out.println("N3 is the larger value");
+		} else {
+			System.out.println("All amount are the same value");
 		}
+
+		// Queensy
+//		double n1 = -1.0;
+//		double n2 = -4.5;
+//		double n3 = 5.3;
+//		double largest;
+//		
+//		if (n1>n2) {
+//			if (n1>n3) {
+//				largest = n1;
+//			}else largest = n3;
+//		}else {
+//			if (n2>n3) {
+//				largest = n2;
+//			}else largest = n3;
+//		}
+//		System.out.println("The largest number is "+largest);
+
+		/*
+		 * Task 3: 
+		 Write a Java Program that prints the day of the week. 
+		 Note : Your input is number 1 to 7. 
+		 Example:
+		 Input   : 1
+         output  : Monday
+
+		 * */
+		
+		
+		
+//		Scanner day = new Scanner(System.in);
+//		System.out.println("Input number between 1 and 7.");
+//		int number = day.nextInt();
+//
+//		switch (number) {
+//		case 1:
+//			System.out.println("Monday");
+//			;
+//			break;
+//		case 2:
+//			System.out.println("Tuesday");
+//			;
+//			break;
+//		case 3:
+//			System.out.println("Wednesday");
+//			;
+//			break;
+//		case 4:
+//			System.out.println("Thursday");
+//			break;
+//		case 5:
+//			System.out.println("Friday");
+//			break;
+//		case 6:
+//			System.out.println("Saturday");
+//			break;
+//		case 7:
+//			System.out.println("Sunday");
+//			break;
+//		}
+//		day.close();
+		
+		
+		
+		Scanner day = new Scanner(System.in);
+		System.out.println("Input number between 1 and 7.");
+		int number = day.nextInt();	
+		
+		if (number == 1) {
+			System.out.println("Monday");
+		}else if (number == 2) {
+			System.out.println("Tuesday");
+		}else if (number == 3) {
+			System.out.println("Wednesday");
+		}else if (number == 4 ) {
+			System.out.println("Thursday");
+		}else if (number == 5) {
+			System.out.println("Friday");
+		}else if (number == 6) {
+			System.out.println("Saturday");
+		}else if(number == 7 ) {
+			System.out.println("Sunday");
+		}else {
+			System.out.println("Invalid number");
+		}
+		
+		
+		day.close();
+		
+		
+		
 
 	}
 
