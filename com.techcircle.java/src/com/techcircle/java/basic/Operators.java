@@ -80,8 +80,8 @@ public class Operators {
 		System.out.println("From line 80 : " + i);
 		
 		i++;
-		i++;
-		i--;
+//		i++;
+//		i--;
 		System.out.println("From line 85 : " + i);
 		
 		

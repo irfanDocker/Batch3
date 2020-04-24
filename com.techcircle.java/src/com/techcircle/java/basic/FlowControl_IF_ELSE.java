@@ -129,18 +129,18 @@ public class FlowControl_IF_ELSE {
 		 */
 
 		// Zaineb
-		double n1 = 4.5;
-		double n2 = 4.5;
-		double n3 = -5.3;
-		if ((n1 > n2) && (n1 > n3) && (n1 !=n2)) {
-			
-		} else if ((n2 > n1) && (n2 > n3)) {
-			System.out.println("N2 is larger value");
-		} else if ((n3 > n1) && (n3 > n2)) {
-			System.out.println("N3 is the larger value");
-		} else {
-			System.out.println("All amount are the same value");
-		}
+//		double n1 = 4.5;
+//		double n2 = 4.5;
+//		double n3 = -5.3;
+//		if ((n1 > n2) && (n1 > n3) && (n1 !=n2)) {
+//			
+//		} else if ((n2 > n1) && (n2 > n3)) {
+//			System.out.println("N2 is larger value");
+//		} else if ((n3 > n1) && (n3 > n2)) {
+//			System.out.println("N3 is the larger value");
+//		} else {
+//			System.out.println("All amount are the same value");
+//		}
 
 		// Queensy
 //		double n1 = -1.0;
@@ -205,9 +205,12 @@ public class FlowControl_IF_ELSE {
 		
 		
 		
-		Scanner day = new Scanner(System.in);
-		System.out.println("Input number between 1 and 7.");
-		int number = day.nextInt();	
+//		Scanner day = new Scanner(System.in);
+//		System.out.println("Input number between 1 and 7.");
+		
+//		int number = day.nextInt();	
+		
+		int number = 4;
 		
 		if (number == 1) {
 			System.out.println("Monday");
@@ -228,7 +231,7 @@ public class FlowControl_IF_ELSE {
 		}
 		
 		
-		day.close();
+//		day.close();
 		
 		
 		
