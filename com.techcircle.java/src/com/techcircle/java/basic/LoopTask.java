@@ -70,24 +70,49 @@ public class LoopTask {
 //        
 //        keyboard.close();
 
-		int n, reverse = 0;
-		System.out.println("Enter an integer to reverse");
-		Scanner in = new Scanner(System.in);
-		n = in.nextInt();
-		while (n != 0) {
-			System.out.println("1 reverse : " + reverse);
-			reverse = reverse * 10;
-			System.out.println("2 reverse : " + reverse);
-			System.out.println("1 value of n : " + n);
-			reverse = reverse + n % 10;
-			System.out.println("n % 10 :" + n % 10);
-			System.out.println("4 reverse : " + reverse);
-			n = n / 10;
-			System.out.println("2 value of n : " + n);
-		}
-		System.out.println("Reverse of the number is " + reverse);
+//		int n, reverse = 0;
+//		System.out.println("Enter an integer to reverse");
+//		Scanner in = new Scanner(System.in);
+//		n = in.nextInt();
+//		while (n != 0) {
+//			System.out.println("1 reverse : " + reverse);
+//			reverse = reverse * 10;
+//			System.out.println("2 reverse : " + reverse);
+//			System.out.println("1 value of n : " + n);
+//			reverse = reverse + n % 10;
+//			System.out.println("n % 10 :" + n % 10);
+//			System.out.println("4 reverse : " + reverse);
+//			n = n / 10;
+//			System.out.println("2 value of n : " + n);
+//		}
+//		System.out.println("Reverse of the number is " + reverse);
+//
+//		in.close();
 
-		in.close();
+		int number = 1;
+		int even = 0;
+		int odd = 0;
+
+		while (number < 101) {
+			if (number % 2 == 0) {
+				even += number;
+				// even = even + number;
+			} else {
+				odd += number;
+			}
+
+//			even = (number %2 ==0) ? even + number : even;
+//			
+//			odd = (number %2 ==1) ? odd + number : odd;
+
+//			if(number % 2 == 0)
+//				System.out.println(number);
+
+			number++;
+		}
+
+		System.out.println("The sum of even numbers: " + even);
+		System.out.println("The sum of odd numbers: " + odd);
 
 	}
 
