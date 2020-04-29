@@ -1,5 +1,7 @@
 package com.techcircle.java.basic;
 
+import java.util.Arrays;
+
 public class Array {
 	public static void main(String[] args) {
 		
@@ -32,7 +34,18 @@ public class Array {
 		
 		System.out.println(scores[3]);
 		
-		
+		int intArr[] = { 10, 20, 15, 22, 35 };
+		  
+        Arrays.sort(intArr);
+  
+        int intKey = 22;
+  
+        System.out.println(intKey
+                           + " found at index = "
+                           + Arrays
+                                 .binarySearch(intArr, intKey));
+
+
 		
 		
 		
