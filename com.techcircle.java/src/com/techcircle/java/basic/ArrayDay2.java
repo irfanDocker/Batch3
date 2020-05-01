@@ -141,7 +141,16 @@ public class ArrayDay2 {
 		///System.out.println(Arrays.deepToString(nums[0][0]));
 		
 		
-		
+		// Array with duplicate elements
+        Integer[] origArray = new Integer[] { 1, 1, 2, 3, 3, 3, 4, 5, 6, 6, 6, 7, 8 };
+ 
+        // This array has duplicate elements
+        System.out.println(Arrays.toString(origArray));
+ 
+        Integer[] tempArray = removeDuplicates(origArray);
+ 
+        // Verify the array content
+        System.out.println(Arrays.toString(tempArray));
 		
 		
 		
@@ -155,6 +164,27 @@ public class ArrayDay2 {
 
 	}
 
+	
+	
+	 private static Integer[] removeDuplicates(Integer[] origArray) {
+		 
+	        Integer[] tempArray = new Integer[origArray.length];
+	         
+	        int indexJ = 0;
+	        for (int indexI = 0; indexI < origArray.length - 1; indexI++) 
+	        {
+	            Integer currentElement = origArray[indexI];
+	             
+	            if (currentElement != origArray[indexI+1]) {
+	                tempArray[indexJ++] = currentElement;
+	            }
+	        }
+	         
+	        tempArray[indexJ++] = origArray[origArray.length-1];
+	         
+	        return tempArray;
+	    }
+	
 	public static void print1to10() {
 		for (int i = 1; i < 11; i++) {
 			System.out.println(i);
