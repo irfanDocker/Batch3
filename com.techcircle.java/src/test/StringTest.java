@@ -49,7 +49,7 @@ public class StringTest {
 //		
 //		System.out.println(name1);
 		
-		
+/*		
 		//Task split below string to two string and make it upper case
 		
 		String str = "HelloWorld";
@@ -98,9 +98,25 @@ public class StringTest {
 		System.out.println(emptyStr.length());
 		System.out.println(emptyStr2.length());
 		
+		*/
 		
+		//String Part2
 		
+		char arr[] = {'j','a','v','a','a','v','a','a','v','a','a','v'};
 		
+		String strOfCharArr = new String(arr);
+		
+		System.out.println(strOfCharArr);
+		
+		System.out.println(strOfCharArr.length());
+		
+		System.out.println(strOfCharArr.charAt(1));
+		
+		System.out.println(strOfCharArr.charAt(2));
+		
+		System.out.println(strOfCharArr.charAt(3));
+		
+		System.out.println(strOfCharArr.charAt(strOfCharArr.length()-1));
 		
 		
 		
